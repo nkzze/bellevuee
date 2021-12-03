@@ -1,33 +1,120 @@
 <!DOCTYPE html>
-
-<html>
-
-
-    <head>
-        <style>
-            body {
-                background-image: url("https://th.bing.com/th/id/OIP.ZyS3HHGQw5in6ffMnfioAwHaDP?w=321&h=153&c=7&r=0&o=5&pid=1.7");
-                background-repeat:no-repeat;
-                background-size:cover;
-            }
-        </style>
-        <P><FONT face="Comic sans ms" color="#000000"   size="5">  <title>cantine</title>
-
-
-        <body>
-             <h1> ajd le programme de la cantine sera : </h1>
-            <li> melon </li>
-            <li> pates </li>
-        <li> yaourt </li> </FONT>
-
-        <div style="background-image:url ('https://th.bing.com/th/id/OIP.ZyS3HHGQw5in6ffMnfioAwHaDP?w=321&h=153&c=7&r=0&o=5&pid=1.7');">
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Resto</title>
+<body>
+<header>
+    <a href="#" class="logo"><span>Bellevue</span></a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+    </ul>
+</header>
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2 >lycée bellevue</h2>
+        <p>le lycée bellevue est un lycée situé a Toulouse</p>
+    </div>
+</section>
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"><span>A Propos Du Lycée</span></h2>
+            <p>Le lycée Bellevue est un lycée polyvalent de Toulouse. 
+                Il accueille des élèves de la seconde à la terminale dans les filières générales (ES, L, S),
+                l'enseignement technologies de gestion (STMG) l'enseignement d'étude professionnelle (BEP), 
+                et dans un dispositif de Sportifs de Haut Niveau (SHN). Il accueille aussi des filières de CPGE scientifiques PCSI, 
+                MPSI puis MP, PC* et PSI en deuxième année.</p>
+        </div>
+        <div class="col50">
+            <div class="img">
+                <img src="https://bellevue-toulouse.mon-ent-occitanie.fr/lectureFichiergw.do?ID_FICHIER=1494080869580" alt="image">
+            </div>
+        </div>
+    </div>
+    <section class="apropos" id="apropos">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titre-texte"><span>Plans du lycée</span></h2>
+                <p></p>
+            </div>
+            <div class="col50">
+                <div class="img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCkhmKbVsUQUlaOOxu2mjFlLU9Jq6rFkXIUg&usqp=CAU" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+</section>
+<section class="expert" id="expert">
+    <div class="titre">
+        <h2 class="titre-texte" <span>le </span>Principal et quelques CPE</h2>
+        <p>Ce sont les principaux martires des élèves !</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="https://cdn-s-www.ledauphine.com/images/626A1620-58D0-4CE1-B616-80D444C89B15/NW_listE/damien-peries-36-ans-le-poet-photo-le-dl-agnes-braisaz-1615047286.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Monsieur Périès</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="https://image-uviadeo.journaldunet.com/image/450/1172964290/296472.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Monsieur CORAIRIE</h3>
+            </div>
+</section>
+ <section class="temoignage" id="temoignage">
+    <div class="titre blanc">
+        <h2 class="titre-texte">Qu'en Disent Nos <span>E</span>lèves</h2>
+        <p>Ces élèves ne sont plus au lycée désormais mais resterons dans nos coeurs</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/t1.jpeg" alt="">
+            </div>
+            <div class="text">
+                <p>J'ai très bien vécu cette expérience qu'est le lycée</p>
+                <h3>Arthur Bûcheron</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/t2.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Je me suis découvert une passion pour l'art et et la poésie je suis heureux d'avoir pu être scolariser ici</p>
+                <h3>Gabriel Duterc</h3>
+            </div>
+        </div>
        
-       
-        
-     </body>
+    </div>
+ <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+     });
 
-
-    </head>
-
+     function toggleMenu(){
+         const tmenuToggle = document.querySelector('.menuToggle');
+         const navbar = document.querySelector('.navbar');
+         navbar.classList.toggle('active');
+         menuToggle.classList.toggle('active');
+     }
+ </script>
+</body>
 </html>
