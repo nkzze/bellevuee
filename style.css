@@ -1,5 +1,21 @@
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    text-size-adjust: 10;
+}
+
+
+
+
 h2{
     color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    text-size-adjust: 10;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15;
 }
 
 
@@ -8,7 +24,7 @@ b
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     scroll-behavior: smooth;
 }
 
@@ -78,7 +94,7 @@ header .navbar li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(https://bellevue-toulouse.mon-ent-occitanie.fr/lectureFichiergw.do?ID_FICHIER=1463422024446);
+    background-image: url(https://us.123rf.com/450wm/monsitj/monsitj1707/monsitj170700083/82427416-programmation-code-technologie-abstraite-fond-de-logiciels-de-logiciels-et-ordinateur-script.jpg?ver=6);
     background-size: cover;
 }
 
